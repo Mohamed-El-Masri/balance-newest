@@ -1,0 +1,3494 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Balance Real Estate API",
+    "description": "Comprehensive API for Balance platform. Supports Admin, Employee, User, Guest roles.",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/admin/dashboard/analytics": {
+      "get": {
+        "tags": [
+          "AdminDashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/dashboard/users": {
+      "get": {
+        "tags": [
+          "AdminDashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "text/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "application/*+json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Auth/register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "text/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "application/*+json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Auth/google-login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "text/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "application/*+json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Auth/change-password": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "text/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "application/*+json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ContentComponent/{id}": {
+      "get": {
+        "tags": [
+          "ContentComponent"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContentComponentDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContentComponentDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContentComponentDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ContentComponent"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContentComponentUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContentComponentUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContentComponentUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ContentComponent"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ContentComponent": {
+      "get": {
+        "tags": [
+          "ContentComponent"
+        ],
+        "parameters": [
+          {
+            "name": "Type",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentComponentDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentComponentDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentComponentDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ContentComponent"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContentComponentCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContentComponentCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContentComponentCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/employee/dashboard/assigned-items": {
+      "get": {
+        "tags": [
+          "EmployeeDashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/employee/dashboard/tasks": {
+      "get": {
+        "tags": [
+          "EmployeeDashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Favorites": {
+      "post": {
+        "tags": [
+          "Favorites"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "text/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "application/*+json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Favorites"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Favorites/{id}": {
+      "delete": {
+        "tags": [
+          "Favorites"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FileUpload/upload": {
+      "post": {
+        "tags": [
+          "FileUpload"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": { }
+                }
+              },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"},
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FileUpload/delete": {
+      "delete": {
+        "tags": [
+          "FileUpload"
+        ],
+        "parameters": [
+          {
+            "name": "publicId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/guest/projects": {
+      "get": {
+        "tags": [
+          "Guest"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/guest/interest-request": {
+      "post": {
+        "tags": [
+          "Guest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "text/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "application/*+json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/InterestRequest": {
+      "post": {
+        "tags": [
+          "InterestRequest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "text/json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            },
+            "application/*+json": {
+              "schema": { },
+              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "InterestRequest"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Notification/{id}": {
+      "get": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationDto"
+                },
+                "example": {"id":1,"titleAr":"تنبيه جديد","titleEn":"New Notification","messageAr":"لديك مهمة جديدة","messageEn":"You have a new task","userId":2,"type":1,"isRead":false,"createdAt":"2025-07-12T09:22:39.5573413Z"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationDto"
+                },
+                "example": {"id":1,"titleAr":"تنبيه جديد","titleEn":"New Notification","messageAr":"لديك مهمة جديدة","messageEn":"You have a new task","userId":2,"type":1,"isRead":false,"createdAt":"2025-07-12T09:22:39.5573413Z"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationDto"
+                },
+                "example": {"id":1,"titleAr":"تنبيه جديد","titleEn":"New Notification","messageAr":"لديك مهمة جديدة","messageEn":"You have a new task","userId":2,"type":1,"isRead":false,"createdAt":"2025-07-12T09:22:39.5573413Z"}
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Notification": {
+      "get": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Type",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IsRead",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NotificationDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NotificationDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NotificationDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Notification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationCreateDto"
+              },
+              "example": {"titleAr":"تنبيه مهم","titleEn":"Important Notification","messageAr":"يرجى مراجعة المشروع","messageEn":"Please review the project","userId":2,"type":2}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationCreateDto"
+              },
+              "example": {"titleAr":"تنبيه مهم","titleEn":"Important Notification","messageAr":"يرجى مراجعة المشروع","messageEn":"Please review the project","userId":2,"type":2}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationCreateDto"
+              },
+              "example": {"titleAr":"تنبيه مهم","titleEn":"Important Notification","messageAr":"يرجى مراجعة المشروع","messageEn":"Please review the project","userId":2,"type":2}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Notification/{id}/mark-as-read": {
+      "post": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Project/{id}": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDto"
+                },
+                "example": {"id":1,"nameAr":"مشروع سكني فاخر","nameEn":"Luxury Residential Project","descriptionAr":"وصف المشروع بالعربية","descriptionEn":"Project description in English","locationAr":"الرياض","locationEn":"Riyadh","region":"الوسطى","city":"الرياض","district":"العليا","latitude":24.7136,"longitude":46.6753,"numberOfBaths":3,"numberOfBedrooms":4,"cost":2000000,"area":350,"directLink":"https://balance.com/projects/1","areaUnitAr":"متر مربع","areaUnitEn":"sqm","mainImageUrl":"https://cloudinary.com/image.jpg","images":[{"id":1,"imageUrl":"https://cloudinary.com/image.jpg","caption":"واجهة المشروع","order":1}],"type":1,"status":1,"isFeatured":true,"youtubeVideoUrl":"https://youtube.com/video","assignedEmployeeIds":[2,3],"createdAt":"0001-01-01T00:00:00"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDto"
+                },
+                "example": {"id":1,"nameAr":"مشروع سكني فاخر","nameEn":"Luxury Residential Project","descriptionAr":"وصف المشروع بالعربية","descriptionEn":"Project description in English","locationAr":"الرياض","locationEn":"Riyadh","region":"الوسطى","city":"الرياض","district":"العليا","latitude":24.7136,"longitude":46.6753,"numberOfBaths":3,"numberOfBedrooms":4,"cost":2000000,"area":350,"directLink":"https://balance.com/projects/1","areaUnitAr":"متر مربع","areaUnitEn":"sqm","mainImageUrl":"https://cloudinary.com/image.jpg","images":[{"id":1,"imageUrl":"https://cloudinary.com/image.jpg","caption":"واجهة المشروع","order":1}],"type":1,"status":1,"isFeatured":true,"youtubeVideoUrl":"https://youtube.com/video","assignedEmployeeIds":[2,3],"createdAt":"0001-01-01T00:00:00"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDto"
+                },
+                "example": {"id":1,"nameAr":"مشروع سكني فاخر","nameEn":"Luxury Residential Project","descriptionAr":"وصف المشروع بالعربية","descriptionEn":"Project description in English","locationAr":"الرياض","locationEn":"Riyadh","region":"الوسطى","city":"الرياض","district":"العليا","latitude":24.7136,"longitude":46.6753,"numberOfBaths":3,"numberOfBedrooms":4,"cost":2000000,"area":350,"directLink":"https://balance.com/projects/1","areaUnitAr":"متر مربع","areaUnitEn":"sqm","mainImageUrl":"https://cloudinary.com/image.jpg","images":[{"id":1,"imageUrl":"https://cloudinary.com/image.jpg","caption":"واجهة المشروع","order":1}],"type":1,"status":1,"isFeatured":true,"youtubeVideoUrl":"https://youtube.com/video","assignedEmployeeIds":[2,3],"createdAt":"0001-01-01T00:00:00"}
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectUpdateDto"
+              },
+              "example": {"id":1,"nameAr":"مشروع محدث","nameEn":"Updated Project","descriptionAr":"وصف محدث","descriptionEn":"Updated description","locationAr":"الدمام","locationEn":"Dammam","region":"الشرقية","city":"الدمام","district":"الخليج","latitude":26.4207,"longitude":50.0888,"numberOfBaths":2,"numberOfBedrooms":2,"cost":1200000,"area":180,"directLink":"https://balance.com/projects/3","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":1,"status":2,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[5]}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectUpdateDto"
+              },
+              "example": {"id":1,"nameAr":"مشروع محدث","nameEn":"Updated Project","descriptionAr":"وصف محدث","descriptionEn":"Updated description","locationAr":"الدمام","locationEn":"Dammam","region":"الشرقية","city":"الدمام","district":"الخليج","latitude":26.4207,"longitude":50.0888,"numberOfBaths":2,"numberOfBedrooms":2,"cost":1200000,"area":180,"directLink":"https://balance.com/projects/3","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":1,"status":2,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[5]}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectUpdateDto"
+              },
+              "example": {"id":1,"nameAr":"مشروع محدث","nameEn":"Updated Project","descriptionAr":"وصف محدث","descriptionEn":"Updated description","locationAr":"الدمام","locationEn":"Dammam","region":"الشرقية","city":"الدمام","district":"الخليج","latitude":26.4207,"longitude":50.0888,"numberOfBaths":2,"numberOfBedrooms":2,"cost":1200000,"area":180,"directLink":"https://balance.com/projects/3","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":1,"status":2,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[5]}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Project": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "Region",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "City",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "District",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Type",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Status",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IsFeatured",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectCreateDto"
+              },
+              "example": {"nameAr":"مشروع جديد","nameEn":"New Project","descriptionAr":"وصف جديد","descriptionEn":"New description","locationAr":"جدة","locationEn":"Jeddah","region":"الغربية","city":"جدة","district":"الشاطئ","latitude":21.4858,"longitude":39.1925,"numberOfBaths":2,"numberOfBedrooms":3,"cost":1500000,"area":250,"directLink":"https://balance.com/projects/2","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":2,"status":1,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[4]}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectCreateDto"
+              },
+              "example": {"nameAr":"مشروع جديد","nameEn":"New Project","descriptionAr":"وصف جديد","descriptionEn":"New description","locationAr":"جدة","locationEn":"Jeddah","region":"الغربية","city":"جدة","district":"الشاطئ","latitude":21.4858,"longitude":39.1925,"numberOfBaths":2,"numberOfBedrooms":3,"cost":1500000,"area":250,"directLink":"https://balance.com/projects/2","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":2,"status":1,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[4]}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectCreateDto"
+              },
+              "example": {"nameAr":"مشروع جديد","nameEn":"New Project","descriptionAr":"وصف جديد","descriptionEn":"New description","locationAr":"جدة","locationEn":"Jeddah","region":"الغربية","city":"جدة","district":"الشاطئ","latitude":21.4858,"longitude":39.1925,"numberOfBaths":2,"numberOfBedrooms":3,"cost":1500000,"area":250,"directLink":"https://balance.com/projects/2","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":2,"status":1,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[4]}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/{id}/assign-employees": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Project/{id}/set-featured": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "isFeatured",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Project/{id}/add-image": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectImageDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectImageDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectImageDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Project/image/{imageId}": {
+      "delete": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "imageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Task/{id}": {
+      "get": {
+        "tags": [
+          "Task"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                },
+                "example": {"id":1,"title":"مهمة متابعة مشروع","description":"متابعة تقدم العمل في المشروع رقم 1","assignedToId":2,"status":1,"dueDate":"2025-07-19T09:22:39.6051844Z","relatedProjectId":1,"relatedUnitId":null,"completedAt":null,"notes":"يرجى تحديث الحالة أسبوعياً"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                },
+                "example": {"id":1,"title":"مهمة متابعة مشروع","description":"متابعة تقدم العمل في المشروع رقم 1","assignedToId":2,"status":1,"dueDate":"2025-07-19T09:22:39.6051844Z","relatedProjectId":1,"relatedUnitId":null,"completedAt":null,"notes":"يرجى تحديث الحالة أسبوعياً"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                },
+                "example": {"id":1,"title":"مهمة متابعة مشروع","description":"متابعة تقدم العمل في المشروع رقم 1","assignedToId":2,"status":1,"dueDate":"2025-07-19T09:22:39.6051844Z","relatedProjectId":1,"relatedUnitId":null,"completedAt":null,"notes":"يرجى تحديث الحالة أسبوعياً"}
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Task"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaskItemUpdateDto"
+              },
+              "example": {"id":1,"title":"مهمة محدثة","description":"تم تحديث المهمة","assignedToId":2,"status":2,"dueDate":"2025-07-13T09:22:39.6146754Z","relatedProjectId":1,"relatedUnitId":null,"notes":"تم تحديث الملاحظات"}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaskItemUpdateDto"
+              },
+              "example": {"id":1,"title":"مهمة محدثة","description":"تم تحديث المهمة","assignedToId":2,"status":2,"dueDate":"2025-07-13T09:22:39.6146754Z","relatedProjectId":1,"relatedUnitId":null,"notes":"تم تحديث الملاحظات"}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaskItemUpdateDto"
+              },
+              "example": {"id":1,"title":"مهمة محدثة","description":"تم تحديث المهمة","assignedToId":2,"status":2,"dueDate":"2025-07-13T09:22:39.6146754Z","relatedProjectId":1,"relatedUnitId":null,"notes":"تم تحديث الملاحظات"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Task"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Task": {
+      "get": {
+        "tags": [
+          "Task"
+        ],
+        "parameters": [
+          {
+            "name": "AssignedToId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Status",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "RelatedProjectId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "RelatedUnitId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "DueBefore",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "DueAfter",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TaskItemDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TaskItemDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TaskItemDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Task"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaskItemCreateDto"
+              },
+              "example": {"title":"مهمة جديدة","description":"وصف المهمة الجديدة","assignedToId":3,"status":0,"dueDate":"2025-07-15T09:22:39.6190417Z","relatedProjectId":2,"relatedUnitId":1,"notes":null}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaskItemCreateDto"
+              },
+              "example": {"title":"مهمة جديدة","description":"وصف المهمة الجديدة","assignedToId":3,"status":0,"dueDate":"2025-07-15T09:22:39.6190417Z","relatedProjectId":2,"relatedUnitId":1,"notes":null}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaskItemCreateDto"
+              },
+              "example": {"title":"مهمة جديدة","description":"وصف المهمة الجديدة","assignedToId":3,"status":0,"dueDate":"2025-07-15T09:22:39.6190417Z","relatedProjectId":2,"relatedUnitId":1,"notes":null}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Task/{id}/assign-employee": {
+      "post": {
+        "tags": [
+          "Task"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "employeeId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Task/{id}/set-status": {
+      "post": {
+        "tags": [
+          "Task"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unit/{id}": {
+      "get": {
+        "tags": [
+          "Unit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UnitDto"
+                },
+                "example": {"id":1,"titleAr":"شقة فاخرة","titleEn":"Luxury Apartment","descriptionAr":"شقة واسعة بإطلالة جميلة","descriptionEn":"Spacious apartment with a nice view","price":900000,"area":120,"projectId":1,"status":1,"floor":5,"building":"A","numberOfRooms":3,"latitude":24.7136,"longitude":46.6753,"images":[{"id":1,"imageUrl":"https://cloudinary.com/unit.jpg","caption":"غرفة النوم","order":1}],"featureIds":[1,2],"noteIds":[1],"taskIds":[1],"createdAt":"2025-07-12T12:22:39.6229943+03:00"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UnitDto"
+                },
+                "example": {"id":1,"titleAr":"شقة فاخرة","titleEn":"Luxury Apartment","descriptionAr":"شقة واسعة بإطلالة جميلة","descriptionEn":"Spacious apartment with a nice view","price":900000,"area":120,"projectId":1,"status":1,"floor":5,"building":"A","numberOfRooms":3,"latitude":24.7136,"longitude":46.6753,"images":[{"id":1,"imageUrl":"https://cloudinary.com/unit.jpg","caption":"غرفة النوم","order":1}],"featureIds":[1,2],"noteIds":[1],"taskIds":[1],"createdAt":"2025-07-12T12:22:39.6229943+03:00"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UnitDto"
+                },
+                "example": {"id":1,"titleAr":"شقة فاخرة","titleEn":"Luxury Apartment","descriptionAr":"شقة واسعة بإطلالة جميلة","descriptionEn":"Spacious apartment with a nice view","price":900000,"area":120,"projectId":1,"status":1,"floor":5,"building":"A","numberOfRooms":3,"latitude":24.7136,"longitude":46.6753,"images":[{"id":1,"imageUrl":"https://cloudinary.com/unit.jpg","caption":"غرفة النوم","order":1}],"featureIds":[1,2],"noteIds":[1],"taskIds":[1],"createdAt":"2025-07-12T12:22:39.6229943+03:00"}
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Unit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitUpdateDto"
+              },
+              "example": {"id":1,"titleAr":"شقة محدثة","titleEn":"Updated Apartment","descriptionAr":"شقة تم تحديثها","descriptionEn":"Apartment updated","price":950000,"area":130,"projectId":1,"status":2,"floor":6,"building":"A","numberOfRooms":4,"latitude":24.7136,"longitude":46.6753,"featureIds":[1,2,3]}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitUpdateDto"
+              },
+              "example": {"id":1,"titleAr":"شقة محدثة","titleEn":"Updated Apartment","descriptionAr":"شقة تم تحديثها","descriptionEn":"Apartment updated","price":950000,"area":130,"projectId":1,"status":2,"floor":6,"building":"A","numberOfRooms":4,"latitude":24.7136,"longitude":46.6753,"featureIds":[1,2,3]}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitUpdateDto"
+              },
+              "example": {"id":1,"titleAr":"شقة محدثة","titleEn":"Updated Apartment","descriptionAr":"شقة تم تحديثها","descriptionEn":"Apartment updated","price":950000,"area":130,"projectId":1,"status":2,"floor":6,"building":"A","numberOfRooms":4,"latitude":24.7136,"longitude":46.6753,"featureIds":[1,2,3]}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Unit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unit": {
+      "get": {
+        "tags": [
+          "Unit"
+        ],
+        "parameters": [
+          {
+            "name": "ProjectId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Status",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Floor",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Building",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "NumberOfRooms",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "MinPrice",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "MaxPrice",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "MinArea",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "MaxArea",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UnitDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UnitDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UnitDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Unit"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitCreateDto"
+              },
+              "example": {"titleAr":"شقة جديدة","titleEn":"New Apartment","descriptionAr":"شقة جديدة في مشروع جديد","descriptionEn":"New apartment in a new project","price":800000,"area":100,"projectId":2,"status":1,"floor":2,"building":"B","numberOfRooms":2,"latitude":21.4858,"longitude":39.1925,"featureIds":[3]}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitCreateDto"
+              },
+              "example": {"titleAr":"شقة جديدة","titleEn":"New Apartment","descriptionAr":"شقة جديدة في مشروع جديد","descriptionEn":"New apartment in a new project","price":800000,"area":100,"projectId":2,"status":1,"floor":2,"building":"B","numberOfRooms":2,"latitude":21.4858,"longitude":39.1925,"featureIds":[3]}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitCreateDto"
+              },
+              "example": {"titleAr":"شقة جديدة","titleEn":"New Apartment","descriptionAr":"شقة جديدة في مشروع جديد","descriptionEn":"New apartment in a new project","price":800000,"area":100,"projectId":2,"status":1,"floor":2,"building":"B","numberOfRooms":2,"latitude":21.4858,"longitude":39.1925,"featureIds":[3]}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Unit/{id}/assign-employee": {
+      "post": {
+        "tags": [
+          "Unit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "employeeId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unit/{id}/add-image": {
+      "post": {
+        "tags": [
+          "Unit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitImageDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitImageDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitImageDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unit/image/{imageId}": {
+      "delete": {
+        "tags": [
+          "Unit"
+        ],
+        "parameters": [
+          {
+            "name": "imageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/{id}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                },
+                "example": {"id":1,"userName":"mourad","email":"mourad@example.com","phoneNumber":"+966500000000","firstName":"مراد","lastName":"العتيبي","profilePictureUrl":"https://cloudinary.com/profile.jpg","isActive":true,"lastLoginAt":"2025-07-12T09:22:39.6468724Z","phones":[{"id":1,"phoneNumber":"+966500000000","isPrimary":true}],"roleIds":[1],"favorites":[{"id":1,"projectId":1,"unitId":null}]}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                },
+                "example": {"id":1,"userName":"mourad","email":"mourad@example.com","phoneNumber":"+966500000000","firstName":"مراد","lastName":"العتيبي","profilePictureUrl":"https://cloudinary.com/profile.jpg","isActive":true,"lastLoginAt":"2025-07-12T09:22:39.6468724Z","phones":[{"id":1,"phoneNumber":"+966500000000","isPrimary":true}],"roleIds":[1],"favorites":[{"id":1,"projectId":1,"unitId":null}]}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                },
+                "example": {"id":1,"userName":"mourad","email":"mourad@example.com","phoneNumber":"+966500000000","firstName":"مراد","lastName":"العتيبي","profilePictureUrl":"https://cloudinary.com/profile.jpg","isActive":true,"lastLoginAt":"2025-07-12T09:22:39.6468724Z","phones":[{"id":1,"phoneNumber":"+966500000000","isPrimary":true}],"roleIds":[1],"favorites":[{"id":1,"projectId":1,"unitId":null}]}
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserUpdateDto"
+              },
+              "example": {"id":1,"userName":"mourad-updated","email":"mourad2@example.com","phoneNumber":"+966522222222","firstName":"مراد","lastName":"محدث","profilePictureUrl":"https://cloudinary.com/profile2.jpg","roleIds":[1],"phones":[{"id":2,"phoneNumber":"+966522222222","isPrimary":true}]}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserUpdateDto"
+              },
+              "example": {"id":1,"userName":"mourad-updated","email":"mourad2@example.com","phoneNumber":"+966522222222","firstName":"مراد","lastName":"محدث","profilePictureUrl":"https://cloudinary.com/profile2.jpg","roleIds":[1],"phones":[{"id":2,"phoneNumber":"+966522222222","isPrimary":true}]}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserUpdateDto"
+              },
+              "example": {"id":1,"userName":"mourad-updated","email":"mourad2@example.com","phoneNumber":"+966522222222","firstName":"مراد","lastName":"محدث","profilePictureUrl":"https://cloudinary.com/profile2.jpg","roleIds":[1],"phones":[{"id":2,"phoneNumber":"+966522222222","isPrimary":true}]}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "RoleId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IsActive",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreateDto"
+              },
+              "example": {"userName":"newuser","email":"newuser@example.com","phoneNumber":"+966511111111","firstName":"جديد","lastName":"مستخدم","profilePictureUrl":null,"roleIds":[1],"phones":[{"id":0,"phoneNumber":"+966511111111","isPrimary":true}]}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreateDto"
+              },
+              "example": {"userName":"newuser","email":"newuser@example.com","phoneNumber":"+966511111111","firstName":"جديد","lastName":"مستخدم","profilePictureUrl":null,"roleIds":[1],"phones":[{"id":0,"phoneNumber":"+966511111111","isPrimary":true}]}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreateDto"
+              },
+              "example": {"userName":"newuser","email":"newuser@example.com","phoneNumber":"+966511111111","firstName":"جديد","lastName":"مستخدم","profilePictureUrl":null,"roleIds":[1],"phones":[{"id":0,"phoneNumber":"+966511111111","isPrimary":true}]}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/{id}/assign-role": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "roleId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/{id}/add-phone": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPhoneDto"
+              },
+              "example": {"id":1,"phoneNumber":"+966500000000","isPrimary":true}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPhoneDto"
+              },
+              "example": {"id":1,"phoneNumber":"+966500000000","isPrimary":true}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPhoneDto"
+              },
+              "example": {"id":1,"phoneNumber":"+966500000000","isPrimary":true}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/phone/{phoneId}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "phoneId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/{id}/add-favorite": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FavoriteDto"
+              },
+              "example": {"id":1,"projectId":1,"unitId":null}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FavoriteDto"
+              },
+              "example": {"id":1,"projectId":1,"unitId":null}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FavoriteDto"
+              },
+              "example": {"id":1,"projectId":1,"unitId":null}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/favorite/{favoriteId}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "favoriteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/user/dashboard/profile": {
+      "get": {
+        "tags": [
+          "UserDashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/user/dashboard/interest-requests": {
+      "get": {
+        "tags": [
+          "UserDashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ContentComponentCreateDto": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valueAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "valueEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContentComponentDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valueAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "valueEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContentComponentUpdateDto": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valueAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "valueEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FavoriteDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "unitId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificationCreateDto": {
+        "type": "object",
+        "properties": {
+          "titleAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "titleEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "messageAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "messageEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificationDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "titleAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "titleEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "messageAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "messageEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isRead": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectCreateDto": {
+        "type": "object",
+        "properties": {
+          "nameAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "nameEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "district": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "numberOfBaths": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberOfBedrooms": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cost": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "area": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "directLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaUnitAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaUnitEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isFeatured": {
+            "type": "boolean"
+          },
+          "youtubeVideoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignedEmployeeIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nameAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "nameEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "district": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "numberOfBaths": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberOfBedrooms": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cost": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "area": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "directLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaUnitAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaUnitEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "mainImageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectImageDto"
+            },
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isFeatured": {
+            "type": "boolean"
+          },
+          "youtubeVideoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignedEmployeeIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectImageDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "caption": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectUpdateDto": {
+        "type": "object",
+        "properties": {
+          "nameAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "nameEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "district": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "numberOfBaths": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberOfBedrooms": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cost": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "area": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "directLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaUnitAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaUnitEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isFeatured": {
+            "type": "boolean"
+          },
+          "youtubeVideoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignedEmployeeIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaskItemCreateDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignedToId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "relatedProjectId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "relatedUnitId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaskItemDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignedToId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "relatedProjectId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "relatedUnitId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "completedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaskItemUpdateDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignedToId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "relatedProjectId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "relatedUnitId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitCreateDto": {
+        "type": "object",
+        "properties": {
+          "titleAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "titleEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "area": {
+            "type": "number",
+            "format": "double"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "floor": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "building": {
+            "type": "string",
+            "nullable": true
+          },
+          "numberOfRooms": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "featureIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "titleAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "titleEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "area": {
+            "type": "number",
+            "format": "double"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "floor": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "building": {
+            "type": "string",
+            "nullable": true
+          },
+          "numberOfRooms": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UnitImageDto"
+            },
+            "nullable": true
+          },
+          "featureIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "noteIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "taskIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitImageDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "caption": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitUpdateDto": {
+        "type": "object",
+        "properties": {
+          "titleAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "titleEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "area": {
+            "type": "number",
+            "format": "double"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "floor": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "building": {
+            "type": "string",
+            "nullable": true
+          },
+          "numberOfRooms": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "featureIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserCreateDto": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "profilePictureUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "roleIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "phones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserPhoneDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "profilePictureUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "lastLoginAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "phones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserPhoneDto"
+            },
+            "nullable": true
+          },
+          "roleIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "favorites": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FavoriteDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserPhoneDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPrimary": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserUpdateDto": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "profilePictureUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "roleIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "phones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserPhoneDto"
+            },
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

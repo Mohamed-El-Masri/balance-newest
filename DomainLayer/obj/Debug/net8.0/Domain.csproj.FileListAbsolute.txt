@@ -1,0 +1,11 @@
+E:\Gallery\Balance - mourad\DomainLayer\bin\Debug\net8.0\Domain.deps.json
+E:\Gallery\Balance - mourad\DomainLayer\bin\Debug\net8.0\Domain.dll
+E:\Gallery\Balance - mourad\DomainLayer\bin\Debug\net8.0\Domain.pdb
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.dll
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\refint\Domain.dll
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.pdb
+E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\ref\Domain.dll
