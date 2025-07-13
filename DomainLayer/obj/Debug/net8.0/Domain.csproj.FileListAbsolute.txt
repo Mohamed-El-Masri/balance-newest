@@ -9,3 +9,15 @@ E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.dll
 E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\refint\Domain.dll
 E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\Domain.pdb
 E:\Gallery\Balance - mourad\DomainLayer\obj\Debug\net8.0\ref\Domain.dll
+E:\Gallery\balance-newest\DomainLayer\bin\Debug\net8.0\Domain.deps.json
+E:\Gallery\balance-newest\DomainLayer\bin\Debug\net8.0\Domain.dll
+E:\Gallery\balance-newest\DomainLayer\bin\Debug\net8.0\Domain.pdb
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\Domain.sourcelink.json
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\Domain.dll
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\refint\Domain.dll
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\Domain.pdb
+E:\Gallery\balance-newest\DomainLayer\obj\Debug\net8.0\ref\Domain.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj": {}
+    "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj": {}
   },
   "projects": {
-    "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj": {
+    "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj",
+        "projectUniqueName": "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj",
+        "projectPath": "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\obj\\",
+        "outputPath": "E:\\Gallery\\balance-newest\\ApplicationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj": {
-                "projectPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj"
+              "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj": {
+                "projectPath": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj": {
+    "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj",
+        "projectUniqueName": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj",
+        "projectPath": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\obj\\",
+        "outputPath": "E:\\Gallery\\balance-newest\\DomainLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Gallery\\Balance - mourad\\Presentation\\Presentation.csproj": {}
+    "E:\\Gallery\\balance-newest\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj": {
+    "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj",
+        "projectUniqueName": "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj",
+        "projectPath": "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\obj\\",
+        "outputPath": "E:\\Gallery\\balance-newest\\ApplicationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj": {
-                "projectPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj"
+              "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj": {
+                "projectPath": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj": {
+    "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj",
+        "projectUniqueName": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj",
+        "projectPath": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\obj\\",
+        "outputPath": "E:\\Gallery\\balance-newest\\DomainLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -156,14 +156,14 @@
         }
       }
     },
-    "E:\\Gallery\\Balance - mourad\\InfrastructureLayer\\Infrastructure.csproj": {
+    "E:\\Gallery\\balance-newest\\InfrastructureLayer\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Gallery\\Balance - mourad\\InfrastructureLayer\\Infrastructure.csproj",
+        "projectUniqueName": "E:\\Gallery\\balance-newest\\InfrastructureLayer\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "E:\\Gallery\\Balance - mourad\\InfrastructureLayer\\Infrastructure.csproj",
+        "projectPath": "E:\\Gallery\\balance-newest\\InfrastructureLayer\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Gallery\\Balance - mourad\\InfrastructureLayer\\obj\\",
+        "outputPath": "E:\\Gallery\\balance-newest\\InfrastructureLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,11 +184,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj": {
-                "projectPath": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj"
+              "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj": {
+                "projectPath": "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj"
               },
-              "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj": {
-                "projectPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj"
+              "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj": {
+                "projectPath": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj"
               }
             }
           }
@@ -250,14 +250,14 @@
         }
       }
     },
-    "E:\\Gallery\\Balance - mourad\\Presentation\\Presentation.csproj": {
+    "E:\\Gallery\\balance-newest\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Gallery\\Balance - mourad\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "E:\\Gallery\\balance-newest\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "E:\\Gallery\\Balance - mourad\\Presentation\\Presentation.csproj",
+        "projectPath": "E:\\Gallery\\balance-newest\\Presentation\\Presentation.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Gallery\\Balance - mourad\\Presentation\\obj\\",
+        "outputPath": "E:\\Gallery\\balance-newest\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -278,14 +278,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj": {
-                "projectPath": "E:\\Gallery\\Balance - mourad\\ApplicationLayer\\Application.csproj"
+              "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj": {
+                "projectPath": "E:\\Gallery\\balance-newest\\ApplicationLayer\\Application.csproj"
               },
-              "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj": {
-                "projectPath": "E:\\Gallery\\Balance - mourad\\DomainLayer\\Domain.csproj"
+              "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj": {
+                "projectPath": "E:\\Gallery\\balance-newest\\DomainLayer\\Domain.csproj"
               },
-              "E:\\Gallery\\Balance - mourad\\InfrastructureLayer\\Infrastructure.csproj": {
-                "projectPath": "E:\\Gallery\\Balance - mourad\\InfrastructureLayer\\Infrastructure.csproj"
+              "E:\\Gallery\\balance-newest\\InfrastructureLayer\\Infrastructure.csproj": {
+                "projectPath": "E:\\Gallery\\balance-newest\\InfrastructureLayer\\Infrastructure.csproj"
               }
             }
           }

@@ -916,6 +916,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.TestController",
+    "Method": "Get",
+    "RelativePath": "api/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.TestController",
+    "Method": "Health",
+    "RelativePath": "api/Test/health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.UnitController",
     "Method": "GetAll",
     "RelativePath": "api/Unit",

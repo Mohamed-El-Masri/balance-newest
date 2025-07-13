@@ -1,9 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Balance Real Estate API",
-    "description": "Comprehensive API for Balance platform. Supports Admin, Employee, User, Guest roles.",
-    "version": "v1"
+    "title": "Presentation",
+    "version": "1.0"
   },
   "paths": {
     "/api/admin/dashboard/analytics": {
@@ -38,16 +37,13 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "text/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "application/*+json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             }
           }
         },
@@ -66,16 +62,13 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "text/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "application/*+json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             }
           }
         },
@@ -94,16 +87,13 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "text/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "application/*+json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             }
           }
         },
@@ -122,16 +112,13 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "text/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "application/*+json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             }
           }
         },
@@ -395,16 +382,13 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "text/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "application/*+json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             }
           }
         },
@@ -462,7 +446,6 @@
                   "file": { }
                 }
               },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"},
               "encoding": {
                 "file": {
                   "style": "form"
@@ -519,16 +502,13 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "text/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "application/*+json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             }
           }
         },
@@ -547,16 +527,13 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "text/json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             },
             "application/*+json": {
-              "schema": { },
-              "example": {"name":"ضيف جديد","email":"newguest@example.com","phone":"+966544444444","projectId":2,"unitId":null,"message":"هل المشروع متاح؟"}
+              "schema": { }
             }
           }
         },
@@ -600,20 +577,17 @@
               "text/plain": {
                 "schema": {
                   "$ref": "#/components/schemas/NotificationDto"
-                },
-                "example": {"id":1,"titleAr":"تنبيه جديد","titleEn":"New Notification","messageAr":"لديك مهمة جديدة","messageEn":"You have a new task","userId":2,"type":1,"isRead":false,"createdAt":"2025-07-12T09:22:39.5573413Z"}
+                }
               },
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/NotificationDto"
-                },
-                "example": {"id":1,"titleAr":"تنبيه جديد","titleEn":"New Notification","messageAr":"لديك مهمة جديدة","messageEn":"You have a new task","userId":2,"type":1,"isRead":false,"createdAt":"2025-07-12T09:22:39.5573413Z"}
+                }
               },
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/NotificationDto"
-                },
-                "example": {"id":1,"titleAr":"تنبيه جديد","titleEn":"New Notification","messageAr":"لديك مهمة جديدة","messageEn":"You have a new task","userId":2,"type":1,"isRead":false,"createdAt":"2025-07-12T09:22:39.5573413Z"}
+                }
               }
             }
           }
@@ -728,20 +702,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/NotificationCreateDto"
-              },
-              "example": {"titleAr":"تنبيه مهم","titleEn":"Important Notification","messageAr":"يرجى مراجعة المشروع","messageEn":"Please review the project","userId":2,"type":2}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/NotificationCreateDto"
-              },
-              "example": {"titleAr":"تنبيه مهم","titleEn":"Important Notification","messageAr":"يرجى مراجعة المشروع","messageEn":"Please review the project","userId":2,"type":2}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/NotificationCreateDto"
-              },
-              "example": {"titleAr":"تنبيه مهم","titleEn":"Important Notification","messageAr":"يرجى مراجعة المشروع","messageEn":"Please review the project","userId":2,"type":2}
+              }
             }
           }
         },
@@ -818,20 +789,17 @@
               "text/plain": {
                 "schema": {
                   "$ref": "#/components/schemas/ProjectDto"
-                },
-                "example": {"id":1,"nameAr":"مشروع سكني فاخر","nameEn":"Luxury Residential Project","descriptionAr":"وصف المشروع بالعربية","descriptionEn":"Project description in English","locationAr":"الرياض","locationEn":"Riyadh","region":"الوسطى","city":"الرياض","district":"العليا","latitude":24.7136,"longitude":46.6753,"numberOfBaths":3,"numberOfBedrooms":4,"cost":2000000,"area":350,"directLink":"https://balance.com/projects/1","areaUnitAr":"متر مربع","areaUnitEn":"sqm","mainImageUrl":"https://cloudinary.com/image.jpg","images":[{"id":1,"imageUrl":"https://cloudinary.com/image.jpg","caption":"واجهة المشروع","order":1}],"type":1,"status":1,"isFeatured":true,"youtubeVideoUrl":"https://youtube.com/video","assignedEmployeeIds":[2,3],"createdAt":"0001-01-01T00:00:00"}
+                }
               },
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProjectDto"
-                },
-                "example": {"id":1,"nameAr":"مشروع سكني فاخر","nameEn":"Luxury Residential Project","descriptionAr":"وصف المشروع بالعربية","descriptionEn":"Project description in English","locationAr":"الرياض","locationEn":"Riyadh","region":"الوسطى","city":"الرياض","district":"العليا","latitude":24.7136,"longitude":46.6753,"numberOfBaths":3,"numberOfBedrooms":4,"cost":2000000,"area":350,"directLink":"https://balance.com/projects/1","areaUnitAr":"متر مربع","areaUnitEn":"sqm","mainImageUrl":"https://cloudinary.com/image.jpg","images":[{"id":1,"imageUrl":"https://cloudinary.com/image.jpg","caption":"واجهة المشروع","order":1}],"type":1,"status":1,"isFeatured":true,"youtubeVideoUrl":"https://youtube.com/video","assignedEmployeeIds":[2,3],"createdAt":"0001-01-01T00:00:00"}
+                }
               },
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProjectDto"
-                },
-                "example": {"id":1,"nameAr":"مشروع سكني فاخر","nameEn":"Luxury Residential Project","descriptionAr":"وصف المشروع بالعربية","descriptionEn":"Project description in English","locationAr":"الرياض","locationEn":"Riyadh","region":"الوسطى","city":"الرياض","district":"العليا","latitude":24.7136,"longitude":46.6753,"numberOfBaths":3,"numberOfBedrooms":4,"cost":2000000,"area":350,"directLink":"https://balance.com/projects/1","areaUnitAr":"متر مربع","areaUnitEn":"sqm","mainImageUrl":"https://cloudinary.com/image.jpg","images":[{"id":1,"imageUrl":"https://cloudinary.com/image.jpg","caption":"واجهة المشروع","order":1}],"type":1,"status":1,"isFeatured":true,"youtubeVideoUrl":"https://youtube.com/video","assignedEmployeeIds":[2,3],"createdAt":"0001-01-01T00:00:00"}
+                }
               }
             }
           }
@@ -857,20 +825,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/ProjectUpdateDto"
-              },
-              "example": {"id":1,"nameAr":"مشروع محدث","nameEn":"Updated Project","descriptionAr":"وصف محدث","descriptionEn":"Updated description","locationAr":"الدمام","locationEn":"Dammam","region":"الشرقية","city":"الدمام","district":"الخليج","latitude":26.4207,"longitude":50.0888,"numberOfBaths":2,"numberOfBedrooms":2,"cost":1200000,"area":180,"directLink":"https://balance.com/projects/3","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":1,"status":2,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[5]}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/ProjectUpdateDto"
-              },
-              "example": {"id":1,"nameAr":"مشروع محدث","nameEn":"Updated Project","descriptionAr":"وصف محدث","descriptionEn":"Updated description","locationAr":"الدمام","locationEn":"Dammam","region":"الشرقية","city":"الدمام","district":"الخليج","latitude":26.4207,"longitude":50.0888,"numberOfBaths":2,"numberOfBedrooms":2,"cost":1200000,"area":180,"directLink":"https://balance.com/projects/3","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":1,"status":2,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[5]}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/ProjectUpdateDto"
-              },
-              "example": {"id":1,"nameAr":"مشروع محدث","nameEn":"Updated Project","descriptionAr":"وصف محدث","descriptionEn":"Updated description","locationAr":"الدمام","locationEn":"Dammam","region":"الشرقية","city":"الدمام","district":"الخليج","latitude":26.4207,"longitude":50.0888,"numberOfBaths":2,"numberOfBedrooms":2,"cost":1200000,"area":180,"directLink":"https://balance.com/projects/3","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":1,"status":2,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[5]}
+              }
             }
           }
         },
@@ -1017,20 +982,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/ProjectCreateDto"
-              },
-              "example": {"nameAr":"مشروع جديد","nameEn":"New Project","descriptionAr":"وصف جديد","descriptionEn":"New description","locationAr":"جدة","locationEn":"Jeddah","region":"الغربية","city":"جدة","district":"الشاطئ","latitude":21.4858,"longitude":39.1925,"numberOfBaths":2,"numberOfBedrooms":3,"cost":1500000,"area":250,"directLink":"https://balance.com/projects/2","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":2,"status":1,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[4]}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/ProjectCreateDto"
-              },
-              "example": {"nameAr":"مشروع جديد","nameEn":"New Project","descriptionAr":"وصف جديد","descriptionEn":"New description","locationAr":"جدة","locationEn":"Jeddah","region":"الغربية","city":"جدة","district":"الشاطئ","latitude":21.4858,"longitude":39.1925,"numberOfBaths":2,"numberOfBedrooms":3,"cost":1500000,"area":250,"directLink":"https://balance.com/projects/2","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":2,"status":1,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[4]}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/ProjectCreateDto"
-              },
-              "example": {"nameAr":"مشروع جديد","nameEn":"New Project","descriptionAr":"وصف جديد","descriptionEn":"New description","locationAr":"جدة","locationEn":"Jeddah","region":"الغربية","city":"جدة","district":"الشاطئ","latitude":21.4858,"longitude":39.1925,"numberOfBaths":2,"numberOfBedrooms":3,"cost":1500000,"area":250,"directLink":"https://balance.com/projects/2","areaUnitAr":"متر مربع","areaUnitEn":"sqm","type":2,"status":1,"isFeatured":false,"youtubeVideoUrl":null,"assignedEmployeeIds":[4]}
+              }
             }
           }
         },
@@ -1233,20 +1195,17 @@
               "text/plain": {
                 "schema": {
                   "$ref": "#/components/schemas/TaskItemDto"
-                },
-                "example": {"id":1,"title":"مهمة متابعة مشروع","description":"متابعة تقدم العمل في المشروع رقم 1","assignedToId":2,"status":1,"dueDate":"2025-07-19T09:22:39.6051844Z","relatedProjectId":1,"relatedUnitId":null,"completedAt":null,"notes":"يرجى تحديث الحالة أسبوعياً"}
+                }
               },
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/TaskItemDto"
-                },
-                "example": {"id":1,"title":"مهمة متابعة مشروع","description":"متابعة تقدم العمل في المشروع رقم 1","assignedToId":2,"status":1,"dueDate":"2025-07-19T09:22:39.6051844Z","relatedProjectId":1,"relatedUnitId":null,"completedAt":null,"notes":"يرجى تحديث الحالة أسبوعياً"}
+                }
               },
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/TaskItemDto"
-                },
-                "example": {"id":1,"title":"مهمة متابعة مشروع","description":"متابعة تقدم العمل في المشروع رقم 1","assignedToId":2,"status":1,"dueDate":"2025-07-19T09:22:39.6051844Z","relatedProjectId":1,"relatedUnitId":null,"completedAt":null,"notes":"يرجى تحديث الحالة أسبوعياً"}
+                }
               }
             }
           }
@@ -1272,20 +1231,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/TaskItemUpdateDto"
-              },
-              "example": {"id":1,"title":"مهمة محدثة","description":"تم تحديث المهمة","assignedToId":2,"status":2,"dueDate":"2025-07-13T09:22:39.6146754Z","relatedProjectId":1,"relatedUnitId":null,"notes":"تم تحديث الملاحظات"}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/TaskItemUpdateDto"
-              },
-              "example": {"id":1,"title":"مهمة محدثة","description":"تم تحديث المهمة","assignedToId":2,"status":2,"dueDate":"2025-07-13T09:22:39.6146754Z","relatedProjectId":1,"relatedUnitId":null,"notes":"تم تحديث الملاحظات"}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/TaskItemUpdateDto"
-              },
-              "example": {"id":1,"title":"مهمة محدثة","description":"تم تحديث المهمة","assignedToId":2,"status":2,"dueDate":"2025-07-13T09:22:39.6146754Z","relatedProjectId":1,"relatedUnitId":null,"notes":"تم تحديث الملاحظات"}
+              }
             }
           }
         },
@@ -1429,20 +1385,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/TaskItemCreateDto"
-              },
-              "example": {"title":"مهمة جديدة","description":"وصف المهمة الجديدة","assignedToId":3,"status":0,"dueDate":"2025-07-15T09:22:39.6190417Z","relatedProjectId":2,"relatedUnitId":1,"notes":null}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/TaskItemCreateDto"
-              },
-              "example": {"title":"مهمة جديدة","description":"وصف المهمة الجديدة","assignedToId":3,"status":0,"dueDate":"2025-07-15T09:22:39.6190417Z","relatedProjectId":2,"relatedUnitId":1,"notes":null}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/TaskItemCreateDto"
-              },
-              "example": {"title":"مهمة جديدة","description":"وصف المهمة الجديدة","assignedToId":3,"status":0,"dueDate":"2025-07-15T09:22:39.6190417Z","relatedProjectId":2,"relatedUnitId":1,"notes":null}
+              }
             }
           }
         },
@@ -1535,6 +1488,30 @@
         }
       }
     },
+    "/api/Test": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Test/health": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Unit/{id}": {
       "get": {
         "tags": [
@@ -1558,20 +1535,17 @@
               "text/plain": {
                 "schema": {
                   "$ref": "#/components/schemas/UnitDto"
-                },
-                "example": {"id":1,"titleAr":"شقة فاخرة","titleEn":"Luxury Apartment","descriptionAr":"شقة واسعة بإطلالة جميلة","descriptionEn":"Spacious apartment with a nice view","price":900000,"area":120,"projectId":1,"status":1,"floor":5,"building":"A","numberOfRooms":3,"latitude":24.7136,"longitude":46.6753,"images":[{"id":1,"imageUrl":"https://cloudinary.com/unit.jpg","caption":"غرفة النوم","order":1}],"featureIds":[1,2],"noteIds":[1],"taskIds":[1],"createdAt":"2025-07-12T12:22:39.6229943+03:00"}
+                }
               },
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/UnitDto"
-                },
-                "example": {"id":1,"titleAr":"شقة فاخرة","titleEn":"Luxury Apartment","descriptionAr":"شقة واسعة بإطلالة جميلة","descriptionEn":"Spacious apartment with a nice view","price":900000,"area":120,"projectId":1,"status":1,"floor":5,"building":"A","numberOfRooms":3,"latitude":24.7136,"longitude":46.6753,"images":[{"id":1,"imageUrl":"https://cloudinary.com/unit.jpg","caption":"غرفة النوم","order":1}],"featureIds":[1,2],"noteIds":[1],"taskIds":[1],"createdAt":"2025-07-12T12:22:39.6229943+03:00"}
+                }
               },
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/UnitDto"
-                },
-                "example": {"id":1,"titleAr":"شقة فاخرة","titleEn":"Luxury Apartment","descriptionAr":"شقة واسعة بإطلالة جميلة","descriptionEn":"Spacious apartment with a nice view","price":900000,"area":120,"projectId":1,"status":1,"floor":5,"building":"A","numberOfRooms":3,"latitude":24.7136,"longitude":46.6753,"images":[{"id":1,"imageUrl":"https://cloudinary.com/unit.jpg","caption":"غرفة النوم","order":1}],"featureIds":[1,2],"noteIds":[1],"taskIds":[1],"createdAt":"2025-07-12T12:22:39.6229943+03:00"}
+                }
               }
             }
           }
@@ -1597,20 +1571,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UnitUpdateDto"
-              },
-              "example": {"id":1,"titleAr":"شقة محدثة","titleEn":"Updated Apartment","descriptionAr":"شقة تم تحديثها","descriptionEn":"Apartment updated","price":950000,"area":130,"projectId":1,"status":2,"floor":6,"building":"A","numberOfRooms":4,"latitude":24.7136,"longitude":46.6753,"featureIds":[1,2,3]}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/UnitUpdateDto"
-              },
-              "example": {"id":1,"titleAr":"شقة محدثة","titleEn":"Updated Apartment","descriptionAr":"شقة تم تحديثها","descriptionEn":"Apartment updated","price":950000,"area":130,"projectId":1,"status":2,"floor":6,"building":"A","numberOfRooms":4,"latitude":24.7136,"longitude":46.6753,"featureIds":[1,2,3]}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/UnitUpdateDto"
-              },
-              "example": {"id":1,"titleAr":"شقة محدثة","titleEn":"Updated Apartment","descriptionAr":"شقة تم تحديثها","descriptionEn":"Apartment updated","price":950000,"area":130,"projectId":1,"status":2,"floor":6,"building":"A","numberOfRooms":4,"latitude":24.7136,"longitude":46.6753,"featureIds":[1,2,3]}
+              }
             }
           }
         },
@@ -1784,20 +1755,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UnitCreateDto"
-              },
-              "example": {"titleAr":"شقة جديدة","titleEn":"New Apartment","descriptionAr":"شقة جديدة في مشروع جديد","descriptionEn":"New apartment in a new project","price":800000,"area":100,"projectId":2,"status":1,"floor":2,"building":"B","numberOfRooms":2,"latitude":21.4858,"longitude":39.1925,"featureIds":[3]}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/UnitCreateDto"
-              },
-              "example": {"titleAr":"شقة جديدة","titleEn":"New Apartment","descriptionAr":"شقة جديدة في مشروع جديد","descriptionEn":"New apartment in a new project","price":800000,"area":100,"projectId":2,"status":1,"floor":2,"building":"B","numberOfRooms":2,"latitude":21.4858,"longitude":39.1925,"featureIds":[3]}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/UnitCreateDto"
-              },
-              "example": {"titleAr":"شقة جديدة","titleEn":"New Apartment","descriptionAr":"شقة جديدة في مشروع جديد","descriptionEn":"New apartment in a new project","price":800000,"area":100,"projectId":2,"status":1,"floor":2,"building":"B","numberOfRooms":2,"latitude":21.4858,"longitude":39.1925,"featureIds":[3]}
+              }
             }
           }
         },
@@ -1947,20 +1915,17 @@
               "text/plain": {
                 "schema": {
                   "$ref": "#/components/schemas/UserDto"
-                },
-                "example": {"id":1,"userName":"mourad","email":"mourad@example.com","phoneNumber":"+966500000000","firstName":"مراد","lastName":"العتيبي","profilePictureUrl":"https://cloudinary.com/profile.jpg","isActive":true,"lastLoginAt":"2025-07-12T09:22:39.6468724Z","phones":[{"id":1,"phoneNumber":"+966500000000","isPrimary":true}],"roleIds":[1],"favorites":[{"id":1,"projectId":1,"unitId":null}]}
+                }
               },
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/UserDto"
-                },
-                "example": {"id":1,"userName":"mourad","email":"mourad@example.com","phoneNumber":"+966500000000","firstName":"مراد","lastName":"العتيبي","profilePictureUrl":"https://cloudinary.com/profile.jpg","isActive":true,"lastLoginAt":"2025-07-12T09:22:39.6468724Z","phones":[{"id":1,"phoneNumber":"+966500000000","isPrimary":true}],"roleIds":[1],"favorites":[{"id":1,"projectId":1,"unitId":null}]}
+                }
               },
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/UserDto"
-                },
-                "example": {"id":1,"userName":"mourad","email":"mourad@example.com","phoneNumber":"+966500000000","firstName":"مراد","lastName":"العتيبي","profilePictureUrl":"https://cloudinary.com/profile.jpg","isActive":true,"lastLoginAt":"2025-07-12T09:22:39.6468724Z","phones":[{"id":1,"phoneNumber":"+966500000000","isPrimary":true}],"roleIds":[1],"favorites":[{"id":1,"projectId":1,"unitId":null}]}
+                }
               }
             }
           }
@@ -1986,20 +1951,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UserUpdateDto"
-              },
-              "example": {"id":1,"userName":"mourad-updated","email":"mourad2@example.com","phoneNumber":"+966522222222","firstName":"مراد","lastName":"محدث","profilePictureUrl":"https://cloudinary.com/profile2.jpg","roleIds":[1],"phones":[{"id":2,"phoneNumber":"+966522222222","isPrimary":true}]}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/UserUpdateDto"
-              },
-              "example": {"id":1,"userName":"mourad-updated","email":"mourad2@example.com","phoneNumber":"+966522222222","firstName":"مراد","lastName":"محدث","profilePictureUrl":"https://cloudinary.com/profile2.jpg","roleIds":[1],"phones":[{"id":2,"phoneNumber":"+966522222222","isPrimary":true}]}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/UserUpdateDto"
-              },
-              "example": {"id":1,"userName":"mourad-updated","email":"mourad2@example.com","phoneNumber":"+966522222222","firstName":"مراد","lastName":"محدث","profilePictureUrl":"https://cloudinary.com/profile2.jpg","roleIds":[1],"phones":[{"id":2,"phoneNumber":"+966522222222","isPrimary":true}]}
+              }
             }
           }
         },
@@ -2117,20 +2079,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UserCreateDto"
-              },
-              "example": {"userName":"newuser","email":"newuser@example.com","phoneNumber":"+966511111111","firstName":"جديد","lastName":"مستخدم","profilePictureUrl":null,"roleIds":[1],"phones":[{"id":0,"phoneNumber":"+966511111111","isPrimary":true}]}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/UserCreateDto"
-              },
-              "example": {"userName":"newuser","email":"newuser@example.com","phoneNumber":"+966511111111","firstName":"جديد","lastName":"مستخدم","profilePictureUrl":null,"roleIds":[1],"phones":[{"id":0,"phoneNumber":"+966511111111","isPrimary":true}]}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/UserCreateDto"
-              },
-              "example": {"userName":"newuser","email":"newuser@example.com","phoneNumber":"+966511111111","firstName":"جديد","lastName":"مستخدم","profilePictureUrl":null,"roleIds":[1],"phones":[{"id":0,"phoneNumber":"+966511111111","isPrimary":true}]}
+              }
             }
           }
         },
@@ -2213,20 +2172,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UserPhoneDto"
-              },
-              "example": {"id":1,"phoneNumber":"+966500000000","isPrimary":true}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/UserPhoneDto"
-              },
-              "example": {"id":1,"phoneNumber":"+966500000000","isPrimary":true}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/UserPhoneDto"
-              },
-              "example": {"id":1,"phoneNumber":"+966500000000","isPrimary":true}
+              }
             }
           }
         },
@@ -2281,20 +2237,17 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/FavoriteDto"
-              },
-              "example": {"id":1,"projectId":1,"unitId":null}
+              }
             },
             "text/json": {
               "schema": {
                 "$ref": "#/components/schemas/FavoriteDto"
-              },
-              "example": {"id":1,"projectId":1,"unitId":null}
+              }
             },
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/FavoriteDto"
-              },
-              "example": {"id":1,"projectId":1,"unitId":null}
+              }
             }
           }
         },
@@ -3476,19 +3429,6 @@
         },
         "additionalProperties": false
       }
-    },
-    "securitySchemes": {
-      "Bearer": {
-        "type": "http",
-        "description": "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'",
-        "scheme": "bearer",
-        "bearerFormat": "JWT"
-      }
     }
-  },
-  "security": [
-    {
-      "Bearer": [ ]
-    }
-  ]
+  }
 }
